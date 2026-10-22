@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es" data-theme="negro-dorado">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Douterlungne · Enlaces</title>
+<meta name="description" content="Enlaces de David Douterlungne, investigador de la División de Ciencias Ambientales del IPICYT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --surface-100: #262525; --surface-200: #302f2e; --surface-300: #3b3937;
+    --ink: #f3f2f2; --ink-muted: #9a9898; --ink-faint: #4a4847;
+    --marca: #b68235; --marca-texto: #c79a3e; --marca-claro: #e4cba7;
+    --rule-accent: #b37a2d; --rule: #3f3d3b;
+    --font-display: "Cooper BT", "Fraunces", Georgia, serif;
+    --font-text: "Bree Serif", Georgia, serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--surface-100); color: var(--ink); }
+  body {
+    font-family: var(--font-text);
+    min-height: 100vh; min-height: 100dvh;
+    display: flex; justify-content: center;
+    padding: 40px 16px 24px;
+  }
+  main { width: 100%; max-width: 440px; display: flex; flex-direction: column; }
+
+  .red { display: block; width: 120px; height: 72px; margin-bottom: 24px; }
+  .red line { stroke: var(--ink-faint); stroke-width: 1.5; }
+  .red circle { fill: var(--surface-100); stroke: var(--marca); stroke-width: 2; }
+  .red circle.centro { fill: var(--marca); }
+
+  .etiqueta {
+    font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--ink-muted); margin-bottom: 8px;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(32px, 9vw, 40px); line-height: 1.05;
+    color: var(--marca); margin-bottom: 16px;
+  }
+  .cargo { font-size: 16px; line-height: 1.5; color: var(--marca-claro); }
+  .filete { height: 4px; width: 64px; background: var(--rule-accent); margin: 24px 0 8px; border: 0; }
+
+  nav ul { list-style: none; }
+  nav li { border-bottom: 1px solid var(--rule); }
+  nav a {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 0; min-height: 72px;
+    color: var(--ink); text-decoration: none;
+  }
+  .nodo {
+    flex: 0 0 auto; width: 40px; height: 40px; border-radius: 9999px;
+    border: 2px solid var(--marca); display: grid; place-items: center;
+    font-family: var(--font-display); font-weight: 700; font-size: 16px;
+    color: var(--marca-texto); transition: background .15s, color .15s;
+  }
+  .texto { flex: 1 1 auto; min-width: 0; }
+  .nombre { display: block; font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 1.25; }
+  .detalle { display: block; font-size: 14px; color: var(--ink-muted); margin-top: 2px; }
+  .flecha { flex: 0 0 auto; color: var(--ink-muted); font-size: 20px; transition: transform .15s, color .15s; }
+  nav a:hover .nodo, nav a:focus-visible .nodo { background: var(--marca); color: var(--surface-100); }
+  nav a:hover .flecha, nav a:focus-visible .flecha { color: var(--marca); transform: translateX(4px); }
+  nav a:focus-visible { outline: 2px solid var(--marca); outline-offset: 4px; border-radius: 4px; }
+
+  footer { margin-top: auto; padding-top: 40px; font-size: 13px; color: var(--ink-muted); text-align: right; }
+</style>
+</head>
+<body>
+<main>
+  <svg class="red" viewBox="0 0 120 72" aria-hidden="true">
+    <line x1="20" y1="52" x2="56" y2="28"/><line x1="56" y1="28" x2="100" y2="16"/>
+    <line x1="56" y1="28" x2="92" y2="56"/><line x1="20" y1="52" x2="92" y2="56"/>
+    <circle cx="20" cy="52" r="7"/><circle cx="100" cy="16" r="6"/>
+    <circle cx="92" cy="56" r="6"/><circle class="centro" cx="56" cy="28" r="9"/>
+  </svg>
+
+  <p class="etiqueta">Investigador · IPICYT</p>
+  <h1>David Douterlungne</h1>
+  <p class="cargo">División de Ciencias Ambientales<br>Instituto Potosino de Investigación Científica y Tecnológica</p>
+  <hr class="filete">
+
+  <nav aria-label="Enlaces">
+    <ul>
+      <li><a href="https://www.facebook.com/profile.php?id=61580647237617" target="_blank" rel="noopener">
+        <span class="nodo" aria-hidden="true">1</span>
+        <span class="texto"><span class="nombre">Facebook</span><span class="detalle">Divulgación y noticias</span></span>
+        <span class="flecha" aria-hidden="true">→</span></a></li>
+      <li><a href="https://www.ipicyt.edu.mx/acerca/directorio/curricular/David%20Douterlungne%20Rotsaert/resumen" target="_blank" rel="noopener">
+        <span class="nodo" aria-hidden="true">2</span>
+        <span class="texto"><span class="nombre">Página institucional</span><span class="detalle">Resumen curricular en IPICYT</span></span>
+        <span class="flecha" aria-hidden="true">→</span></a></li>
+      <li><a href="https://www.researchgate.net/profile/David-Douterlungne" target="_blank" rel="noopener">
+        <span class="nodo" aria-hidden="true">3</span>
+        <span class="texto"><span class="nombre">ResearchGate</span><span class="detalle">Publicaciones</span></span>
+        <span class="flecha" aria-hidden="true">→</span></a></li>
+    </ul>
+  </nav>
+
+  <footer>San Luis Potosí, México</footer>
+</main>
+</body>
+</html>
